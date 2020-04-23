@@ -48,8 +48,6 @@ module.exports = async (client, { endpoint, ...options }, reporter) => {
         maxCount > results.length
       ) {
         const maxId = decrementHugeNumberBy1(lastResults[lastResults.length - 1].id_str)
-        console.log('maxId type', typeof maxId);
-
         queryParams = {
           ...params,
           max_id: maxId
