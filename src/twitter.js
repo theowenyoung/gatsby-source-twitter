@@ -1,5 +1,7 @@
 const querystring = require(`querystring`)
 const { decrementHugeNumberBy1 } = require('./utils')
+
+
 module.exports = async (client, { endpoint, ...options }, reporter) => {
   const defaultHandle = async function (client, endpoint, { params }) {
     try {
@@ -34,7 +36,7 @@ module.exports = async (client, { endpoint, ...options }, reporter) => {
 
       if (lastResults.length) {
         lastResults.forEach(item => {
-          console.log('tweet', tweet.full_text);
+          console.log('tweet', item.id, item.full_text);
 
         })
         results = results.concat(lastResults)
@@ -45,9 +47,12 @@ module.exports = async (client, { endpoint, ...options }, reporter) => {
         lastResults.length && lastResults.length >= queryParams.count &&
         maxCount > results.length
       ) {
+        const maxId = decrementHugeNumberBy1(lastResults[lastResults.length - 1].id_str)
+        console.log('maxId type', typeof maxId);
+
         queryParams = {
           ...params,
-          max_id: decrementHugeNumberBy1(lastResults[lastResults.length - 1].id)
+          max_id: maxId
         }
 
       } else {
