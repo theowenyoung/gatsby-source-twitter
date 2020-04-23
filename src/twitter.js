@@ -25,11 +25,18 @@ module.exports = async (client, { endpoint, ...options }, reporter) => {
 
       let lastResults
       try {
+        console.log('twitter endpoint, queryParams', endpoint, queryParams);
         lastResults = await client.get(endpoint, queryParams)
       } catch (e) {
         reporter.error(`Fetch error ${endpoint}: ${e.message}`)
       }
+      console.log('lastResults', lastResults.length);
+
       if (lastResults.length) {
+        lastResults.forEach(item => {
+          console.log('tweet', tweet.full_text);
+
+        })
         results = results.concat(lastResults)
       }
 
