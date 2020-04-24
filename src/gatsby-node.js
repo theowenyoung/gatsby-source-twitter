@@ -35,10 +35,10 @@ function generateNode(tweet, contentDigest, type) {
 }
 
 exports.sourceNodes = async (
-  { boundActionCreators, createContentDigest, reporter, getNodes },
+  { boundActionCreators, createContentDigest, reporter, getNodes, getNode },
   { queries, credentials }
 ) => {
-  const { createNode, touchNode } = boundActionCreators
+  const { createNode, touchNode, deleteNode } = boundActionCreators
   // use cache
   getNodes().forEach(node => {
     if (node.internal.owner !== `@theowenyoung/gatsby-source-twitter`) {
