@@ -41,7 +41,7 @@ exports.sourceNodes = async (
   const { createNode, touchNode } = boundActionCreators
   // use cache
   getNodes().forEach(node => {
-    if (node.internal.owner !== `gatsby-source-twitter`) {
+    if (node.internal.owner !== `@theowenyoung/gatsby-source-twitter`) {
       return
     }
     // touch node for cache
