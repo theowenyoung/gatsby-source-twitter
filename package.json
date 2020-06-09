@@ -1,6 +1,6 @@
 {
   "name": "@theowenyoung/gatsby-source-twitter",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "Fetch data from Twitter API",
   "main": "index.js",
   "repository": {
@@ -51,7 +51,7 @@
     "release-it": "^12.4.3"
   },
   "dependencies": {
-    "twitter": "^1.7.1"
+    "auth1-twitter": "^0.0.1"
   },
   "peerDependencies": {
     "gatsby": "^2.0.88"

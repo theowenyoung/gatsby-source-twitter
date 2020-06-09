@@ -1,6 +1,6 @@
-jest.mock(`twitter`)
+jest.mock(`auth1-twitter`)
 
-const Twitter = require(`twitter`)
+const Twitter = require(`auth1-twitter`)
 const getTweet = require(`../src/twitter`)
 
 const { statuses: mockTweets } = require(`../__mocks__/search-result-mock`)

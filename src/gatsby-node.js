@@ -1,4 +1,4 @@
-const Twitter = require(`twitter`)
+const Twitter = require(`auth1-twitter`)
 
 const getTweet = require(`./twitter`)
 const { md5, camelCase } = require(`./utils`)
