@@ -2340,10 +2340,10 @@ atob@^2.1.2:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
-auth1-twitter@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/auth1-twitter/-/auth1-twitter-0.0.1.tgz#6e6650a01bee4d2602e583c86c8aa68ed416be5c"
-  integrity sha512-DKwTXVmD0VOIgVQt2OxkBvTz06mZKZSd1Xka2xc2fQZUAMHKAcLKsvVSBJfzmsW1YdCCnsyMxWeGV9FOpFP8Sw==
+auth1-twitter@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/auth1-twitter/-/auth1-twitter-0.0.2.tgz#a8ed1bc1e5417881f6a9c51e4c11ada366b0cf13"
+  integrity sha512-1Md0WfqJSZqxp8BdvRd8hvEDBmdb0N605AcnzfobAxq5rfluBs5c9c6/4EZUBNdEbFgAvbQ8jLCy14o44TAWkQ==
   dependencies:
     deep-extend "^0.5.0"
     request "^2.72.0"
